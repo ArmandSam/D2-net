@@ -4,7 +4,7 @@ import numpy as np
 
 import torch
 
-from lib.exceptions import EmptyTensorError
+from lib.D2NET.repo_D2NET.lib.exceptions import EmptyTensorError
 
 
 def preprocess_image(image, preprocessing=None):

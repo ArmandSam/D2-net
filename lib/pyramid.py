@@ -2,9 +2,9 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-from lib.D2NET.
-from lib.exceptions import EmptyTensorError
-from lib.utils import interpolate_dense_features, upscale_positions
+
+from lib.D2NET.repo_D2NET.lib.exceptions import EmptyTensorError
+from lib.D2NET.repo_D2NET.lib.utils import interpolate_dense_features, upscale_positions
 def process_multiscale(image, model, scales=[.5, 1, 2]):
     b, _, h_init, w_init = image.size()
     device = image.device
