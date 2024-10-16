@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 from lib.exceptions import EmptyTensorError
 from lib.utils import interpolate_dense_features, upscale_positions
-
+from lib.D2NET.
 
 def process_multiscale(image, model, scales=[.5, 1, 2]):
     b, _, h_init, w_init = image.size()
